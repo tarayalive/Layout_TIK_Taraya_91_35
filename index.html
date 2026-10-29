@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout Website</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body class="biodata67">
+        <!-- membuat HEADER -->
+         <div class="header">
+            <h1>- Biodata -</h1>
+         </div>
+         <!-- membuat navigator menu -->
+          <div class="topnav">
+            <a href="index.html">Biodata</a>
+            <a href="table_merge.html">Table</a>
+            <a href="list.html">List</a>
+            <a href="sts_91_35.html">STS</a>
+          </div>
+          <!-- membuat content -->
+            <h2>- | Selamat Datang di Web Pertama Saya | -</h2>
+        <h1>☆- || Biodata Diri || -☆</h1>
+
+        <div class="T">
+            <div class="A">
+                <div class="R">
+                    <img src="kecil.jpeg" alt="Foto Taraya" class="bottom">
+                    <img src="bigtarayuh.jpeg" alt="Foto Kecil Taraya" class="top">
+                </div>
+
+                <div class="B">
+                    <p><b>Nama Lengkap:</b> Taraya Live</p>
+                    <p><b>Tanggal Lahir:</b> 23 September 2012</p>
+                    <p><b>Tempat Lahir:</b> Palembang</p>
+                    <p><b>Alamat:</b> Jakarta Utara</p>
+                    <p><b>Email:</b> taraya_10107@smp.santaursulajakarta.sch.id</p>
+                    <p><b>Hobi:</b> Melukis </p>
+                    <p><b>Motto:</b> "Don't waste time on people that don't respect you"</p>
+                    <p><b>Pesan:</b> Don't be scared, just go for it</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>- Makanan Favorit -</h2>
+        <div class="makanan">
+            <div class="Pastaar">
+                <img src="SANUR.jpg" alt="" width="300" height="300">
+                <p>Pasta</p>
+            </div>
+            <div class="spaget">
+                <img src="Spaghetti-Sauce-5-2.jpg" alt="" width="300" height="300">
+                <p>Spaghetti</p>
+            </div>
+            <div class="Indo">
+                <img src="Indomie-mie-goreng-aceh.png" alt="" width="300" height="300">
+                <p>Indomie</p>
+            </div>
+        </div>
+        
+         <h2>- Snack Favorit -</h2>
+          <div class="snack">
+            <div class="elsa">
+                <img src="ice.jpg" alt="" width="300" height="300">
+                <p>Es Krim</p>
+            </div>
+            <div class="gum">
+                <img src="gum.jpg" alt="" width="300" height="300">
+                <p>Yupi</p>
+            </div>
+            <div class="bu">
+                <img src="apple.jpg" alt="" width="300" height="300">
+                <p>Apel Hijau</p>
+            </div>
+        </div>
+         <h2>- Lagu Favorit -</h2> 
+        <div class="songs">
+        <div class="memo" onmouseenter="playAudio(this)" onmouseleave="pauseAudio(this)">
+        <img src="memoo.jpg" alt="" width="300" height="300">
+        <p>Memories - Justin Lee</p>
+        <audio src="Memories.mp3"></audio>
+    </div>
+
+        <div class="story" onmouseenter="playAudio(this)" onmouseleave="pauseAudio(this)">
+        <img src="onedirrection.jpg" alt="" width="300" height="300">
+        <p>Story of My Life - One Direction</p>
+        <audio src="One Direction - Story of My Life.mp3"></audio>
+    </div>
+
+        <div class="rock" onmouseenter="playAudio(this)" onmouseleave="pauseAudio(this)">
+        <img src="ab67616d0000b273867e47321f5b1fd2339750f0.jpg" alt="" width="300" height="300">
+        <p>Rocket Science - vaultboy</p>
+        <audio src="vaultboy - rocket science Official Music Video.mp3"></audio>
+    </div>
+</div>
+
+<audio id="bg-music" src="A Whole New World - Mena Massoud & Naomi Scott _ Piano Karaoke by Andre Panggabean.mp3" loop></audio>
+
+<script>
+    const bgMusic = document.getElementById('bg-music');
+
+    document.addEventListener('click', function startMusic() {
+        if (bgMusic && bgMusic.paused) {
+            bgMusic.play().catch(e => console.log(e));
+        }
+    }, { once: true });
+
+    function playAudio(card) {
+        if (bgMusic) bgMusic.pause();
+
+        const audio = card.querySelector('audio');
+        if (audio) {
+            audio.currentTime = 0;
+            audio.play().catch(e => console.log(e));
+        }
+    }
+
+    function pauseAudio(card) {
+        const audio = card.querySelector('audio');
+        if (audio) audio.pause();
+        
+        if (bgMusic) bgMusic.play().catch(e => console.log(e));
+    }
+</script>
+
+<div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+</div>
+           <!-- membuat footer -->
+            <div class="Footer">
+                <h2>Taraya 91/35</h2>
+            </div>
+    </body>
+</html>

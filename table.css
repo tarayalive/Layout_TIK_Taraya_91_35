@@ -1,0 +1,15 @@
+table, td{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    width: 50%;
+}
+th{
+    text-align: center;
+    height: 60px;
+    background-color: palevioletred;
+}
+td{
+    background-color: papayawhip;
+}

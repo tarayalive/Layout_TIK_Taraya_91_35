@@ -1,0 +1,959 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* membuat style pada header */
+.header{
+    background-color: rgb(255, 236, 202);
+    padding: 20px;
+    text-align: center;
+}
+/* membuat style pada navigator/topmenu */
+.topnav{
+    overflow: hidden;
+    background-color: rgb(255, 223, 171);
+}
+/* membuat style link pada navigator/topnav */
+.topnav a{
+    float: left;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: rgb(58, 179, 172);
+    color: rgb(21, 99, 95);
+}
+.column{
+    float: left;
+    padding: 10;
+}
+/* membuat style pada column kanan-kiri */
+.column.side{
+    width: 25%;
+}
+/* membuat style pada column tengah */
+.column.middle{
+    width: 50%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.Footer{
+    background-color: lemonchiffon;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.biodata67{
+    background-image: url(biodata\ wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h2{
+    color: #00bebe;
+    background-color:  rgb(255, 248, 239);
+    text-align: center;
+    text-decoration-line: underline;
+    border: 3px solid rgb(0, 190, 190);
+    font-family: "haha";
+}
+h1{
+    color: rgb(0, 218, 218);
+    background-color: rgb(255, 248, 239);
+    text-align: center;
+    text-decoration-line: underline overline;
+    border: 3px solid rgb(0, 190, 190);
+    font-family: "heehee";
+}
+h3{
+    color: rgb(0, 218, 218);
+    background-color: rgb(255, 248, 239);
+    text-align: center;
+    text-decoration-line: underline overline;
+    border: 3px solid rgb(0, 190, 190);
+    font-family: "hoho";
+}
+@font-face {
+    font-family: "heehee";
+    src: url(deutsch_gothic/Deutsch.ttf);
+}
+
+@font-face {
+    font-family: "hoho";
+    src: url(simply_olive/Simply\ Olive\ DEMO.ttf);
+}
+
+@font-face {
+    font-family: "haha";
+    src: url(bing_boss/Bing\ Boss.otf);
+}
+
+@font-face {
+    font-family: "yeuh";
+    src: url(the_wildeast/The\ Wildeast.ttf);
+}
+
+div.T{
+    margin: 30px auto;
+    width: 45%;
+    background-color:rgb(255, 248, 239);
+    color: rgb(0, 190, 190);
+    padding: 30px;
+    border-radius: 12px;
+    border: 3px solid rgb(0, 190, 190);
+    border-color: rgb(0, 190, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-text-size-adjust: 14px;
+    font-family: "yeuh";
+}
+
+div.A{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.R {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 16px;
+  border: 5px solid  #00bebe;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+div.R img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+  padding: 0;
+}
+
+.top {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+div.R:hover .top {
+  opacity: 0;
+  transform: scale(1.2); 
+}
+
+div.makanan{
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.Pastaar{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+}
+div.Pastaar:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+img{
+    padding: 10px;
+}
+div.spaget{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+}
+div.spaget:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.Indo{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+}
+div.Indo:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.makanan{
+    color: aliceblue;
+    text-rendering: 50%;
+}
+div.makanan > div:hover{
+  color: #004f4c;
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+  text-size-adjust: 40px;
+  text-rendering: 100%;
+}
+div.songs{
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.memo{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+}
+div.memo:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+img{
+    padding: 10px;
+}
+div.story{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+}
+div.story:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.rock{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+}
+div.rock:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.songs{
+    color: aliceblue;
+    text-rendering: 50%;
+}
+div.songs > div:hover{
+  color: #004f4c;
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+  text-size-adjust: 40px;
+  text-rendering: 100%;
+}
+
+div.snack{
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.elsa{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+}
+div.elsa:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+img{
+    padding: 10px;
+}
+div.gum{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+}
+div.gum:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.bu{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+}
+div.bu:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.snack{
+    color: aliceblue;
+    text-rendering: 50%;
+}
+div.snack > div:hover{
+  color: #004f4c;
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+  text-size-adjust: 40px;
+  text-rendering: 100%;
+}
+
+
+.snowflakes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+.snowflake {
+  position: fixed;
+  top: -10%;
+  color: #fff;
+  font-size: 1.5em;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  animation: fall 10s linear infinite;
+}
+
+.snowflake:nth-child(1)  { left: 10%; animation-delay: 0s; }
+.snowflake:nth-child(2)  { left: 20%; animation-delay: 2s; font-size: 2em; }
+.snowflake:nth-child(3)  { left: 30%; animation-delay: 4s; }
+.snowflake:nth-child(4)  { left: 40%; animation-delay: 1s; font-size: 1.2em; }
+.snowflake:nth-child(5)  { left: 50%; animation-delay: 5s; }
+.snowflake:nth-child(6)  { left: 60%; animation-delay: 3s; font-size: 2.2em; }
+.snowflake:nth-child(7)  { left: 70%; animation-delay: 7s; }
+.snowflake:nth-child(8)  { left: 80%; animation-delay: 2.5s; font-size: 1.8em; }
+.snowflake:nth-child(9)  { left: 90%; animation-delay: 6s; }
+.snowflake:nth-child(10) { left: 95%; animation-delay: 4.5s; }
+
+@keyframes fall {
+  0% {
+    top: -10%;
+    transform: translateX(0);
+  }
+  100% {
+    top: 105vh;
+    transform: translateX(20px);
+  }
+}
+body{
+    background-image: url(Raja.png),url(Raja-Ampat.jpg);
+    background-size: 100% auto, 100% auto;
+    background-position: top center, bottom center;
+    background-repeat: no-repeat,no-repeat;
+    background-attachment: scroll, scroll;
+    min-height: 200vh; 
+    margin: 0;
+    position: relative;
+    background-color: rgb(175, 213, 248);
+}
+
+.garis {
+    width: 100%;
+    height: 4px;
+    border-top: 4px dashed rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 60vh;
+    margin-bottom: 25px;
+}
+
+h2{
+    color: #00bebe;
+    background-color:  rgb(255, 248, 239);
+    text-align: center;
+    text-decoration-line: underline;
+    border: 3px solid rgb(0, 190, 190);
+    font-family: "haha";
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+h2:hover {
+    color: #00ffff;
+    font-size: 32px;
+}
+h1{
+    color: rgb(0, 218, 218);
+    background-color: rgb(255, 248, 239);
+    text-align: center;
+    text-decoration-line: underline overline;
+    border: 3px solid rgb(0, 190, 190);
+    font-family: "heehee";
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+h1:hover {
+    color: #00ffff;
+    font-size: 40px;
+}
+
+h3 {
+    color: rgb(186, 229, 255);
+    text-align: center;
+    text-decoration-line: underline;
+    font-family: "heehee";
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+h3:hover {
+    color: #003870;
+    font-size: 34px;
+}
+
+@font-face {
+    font-family: "heehee";
+    src: url(deutsch_gothic/Deutsch.ttf);
+}
+
+@font-face {
+    font-family: "hoho";
+    src: url(simply_olive/Simply\ Olive\ DEMO.ttf);
+}
+
+@font-face {
+    font-family: "haha";
+    src: url(bing_boss/Bing\ Boss.otf);
+}
+
+@font-face {
+    font-family: "yeuh";
+    src: url(the_wildeast/The\ Wildeast.ttf);
+}
+
+
+div.idunno {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+img{
+    padding: 10px;
+}
+div.scuba{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+    background-color: rgb(255, 255, 255);
+}
+div.scuba:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+img{
+    padding: 10px;
+}
+div.ha{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+    background-color: rgb(255, 255, 255);
+}
+div.ha:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.blue{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+    background-color: rgb(255, 255, 255);
+}
+div.blue:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.idunno{
+    color: aliceblue;
+    text-rendering: 50%;
+}
+div.idunno > div:hover{
+  color: #004f4c;
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+  text-size-adjust: 40px;
+  text-rendering: 100%;
+}
+
+.snowflakes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+.snowflake {
+  position: fixed;
+  top: -10%;
+  color: #fff;
+  font-size: 1.5em;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  animation: fall 10s linear infinite;
+}
+
+.snowflake:nth-child(1)  { left: 10%; animation-delay: 0s; }
+.snowflake:nth-child(2)  { left: 20%; animation-delay: 2s; font-size: 2em; }
+.snowflake:nth-child(3)  { left: 30%; animation-delay: 4s; }
+.snowflake:nth-child(4)  { left: 40%; animation-delay: 1s; font-size: 1.2em; }
+.snowflake:nth-child(5)  { left: 50%; animation-delay: 5s; }
+.snowflake:nth-child(6)  { left: 60%; animation-delay: 3s; font-size: 2.2em; }
+.snowflake:nth-child(7)  { left: 70%; animation-delay: 7s; }
+.snowflake:nth-child(8)  { left: 80%; animation-delay: 2.5s; font-size: 1.8em; }
+.snowflake:nth-child(9)  { left: 90%; animation-delay: 6s; }
+.snowflake:nth-child(10) { left: 95%; animation-delay: 4.5s; }
+
+@keyframes fall {
+  0% {
+    top: -10%;
+    transform: translateX(0);
+  }
+  100% {
+    top: 105vh;
+    transform: translateX(20px);
+  }
+}
+
+.huha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    clear: both;
+    margin-top: 80px;
+}
+
+.artikel {
+    width: 200%;
+    max-width: 950px;
+    padding: 45px 55px;
+    background-color: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 58, 129, 0.25);
+    margin: 0 auto 50px auto;
+    box-sizing: border-box;
+}
+
+.artikel p {
+    font-family: "hoho";
+    font-size: 18px;
+    line-height: 1.6;
+    color: #005b82;
+    text-align: justify;
+    text-indent: 40px;
+    margin-bottom: 20px; 
+}
+
+.artikel p:last-child {
+    margin-bottom: 0;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+table{
+    width: 60;
+    border-collapse: collapse;
+}
+th{
+    height: 40px;
+    padding: 2px;
+    background-color: rgb(120, 255, 192);
+}
+tr{
+    background-color: papayawhip;
+}
+tr:nth-child(even){
+    background-color: powderblue;
+}
+tr:hover{
+    background-color: pink;
+}
+
+/* list style */
+ol{
+    border: 1px solid black;
+    background-color: bisque;
+    margin: 10px;
+    list-style-position: inside;
+    padding: 15px 30px;
+}
+ol li{
+    border: 1px solid black;
+    padding: 5px;
+    background-color: pink;
+}
+ul{
+    border: 1px solid black;
+    background-color: bisque;
+    margin: 10px;
+    list-style-position: inside;
+}
+
+ul li{
+    border: 1px solid black;
+    padding: 5px;
+    background-color: ivory;
+    text-align: justify;
+    margin: 3px 0;
+}
+li.a{
+    background-color: bisque;
+}
+
+body{
+    background-image: url(Raja.png), url(Raja-Ampat.jpg);
+    background-size: 100% auto, 100% auto;
+    background-position: center 110px, center 650px;
+    background-repeat: no-repeat, repeat-y; 
+    background-attachment: scroll, scroll;
+    min-height: 100vh; 
+    margin: 0;
+    position: relative;
+    background-color: rgb(175, 213, 248);
+}
+
+.garis {
+    width: 100%;
+    height: 4px;
+    border-top: 4px dashed rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    
+    /* Atur jarak ini agar posisinya pas di antara gambar 1 dan 2 */
+    margin-top: 49vh;  
+    margin-bottom: 25px;
+}
+
+h2{
+    color: #00bebe;
+    background-color:  rgb(255, 248, 239);
+    text-align: center;
+    text-decoration-line: underline;
+    border: 3px solid rgb(0, 190, 190);
+    font-family: "haha";
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+h2:hover {
+    color: #00ffff;
+    font-size: 32px;
+}
+h1{
+    color: rgb(0, 218, 218);
+    background-color: rgb(255, 248, 239);
+    text-align: center;
+    text-decoration-line: underline overline;
+    border: 3px solid rgb(0, 190, 190);
+    font-family: "heehee";
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+h1:hover {
+    color: #00ffff;
+    font-size: 40px;
+}
+
+h3 {
+    color: rgb(186, 229, 255);
+    text-align: center;
+    text-decoration-line: underline;
+    font-family: "heehee";
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+h3:hover {
+    color: #003870;
+    font-size: 34px;
+}
+
+@font-face {
+    font-family: "heehee";
+    src: url(deutsch_gothic/Deutsch.ttf);
+}
+
+@font-face {
+    font-family: "hoho";
+    src: url(simply_olive/Simply\ Olive\ DEMO.ttf);
+}
+
+@font-face {
+    font-family: "haha";
+    src: url(bing_boss/Bing\ Boss.otf);
+}
+
+@font-face {
+    font-family: "yeuh";
+    src: url(the_wildeast/The\ Wildeast.ttf);
+}
+
+
+div.idunno {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+img{
+    padding: 10px;
+}
+div.scuba{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+    background-color: rgb(255, 255, 255);
+}
+div.scuba:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+img{
+    padding: 10px;
+}
+div.ha{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+    background-color: rgb(255, 255, 255);
+}
+div.ha:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.blue{
+    width: 350px;
+    height: 380px;
+    border-radius: 325x;
+    box-shadow: 0 4px 8px 0 rgb(0, 107, 107);
+    background-color: rgb(255, 255, 255);
+}
+div.blue:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.idunno{
+    color: aliceblue;
+    text-rendering: 50%;
+}
+div.idunno > div:hover{
+  color: #004f4c;
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+  text-size-adjust: 40px;
+  text-rendering: 100%;
+}
+
+.fish{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+.fih{
+  position: fixed;
+  top: -10%;
+  color: #fff;
+  font-size: 1.5em;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  animation: fall 10s linear infinite;
+}
+
+.fih:nth-child(1)  { left: 10%; animation-delay: 0s; }
+.fih:nth-child(2)  { left: 20%; animation-delay: 2s; font-size: 2em; }
+.fih:nth-child(3)  { left: 30%; animation-delay: 4s; }
+.fih:nth-child(4)  { left: 40%; animation-delay: 1s; font-size: 1.2em; }
+.fih:nth-child(5)  { left: 50%; animation-delay: 5s; }
+.fih:nth-child(6)  { left: 60%; animation-delay: 3s; font-size: 2.2em; }
+.fhi:nth-child(7)  { left: 70%; animation-delay: 7s; }
+.fih:nth-child(8)  { left: 80%; animation-delay: 2.5s; font-size: 1.8em; }
+.fih:nth-child(9)  { left: 90%; animation-delay: 6s; }
+.fih:nth-child(10) { left: 95%; animation-delay: 4.5s; }
+
+@keyframes fall {
+  0% {
+    top: -10%;
+    transform: translateX(0);
+  }
+  100%{
+    top: 105vh;
+    transform: translateX(20px);
+  }
+}
+
+.huhaha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    clear: both;
+    margin-top: 80px;
+}
+
+.artikel{
+    width: 200%;
+    max-width: 950px;
+    padding: 45px 55px;
+    background-color: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 58, 129, 0.25);
+    margin: 0 auto 50px auto;
+    box-sizing: border-box;
+}
+
+.artikel p{
+    font-family: "hoho";
+    font-size: 18px;
+    line-height: 1.6;
+    color: #005b82;
+    text-align: justify;
+    text-indent: 40px;
+    margin-bottom: 20px; 
+}
+
+.artikel p:last-child{
+    margin-bottom: 0;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+table{
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+    height: 40px;
+    padding: 2px;
+    background-color: rgb(120, 255, 192);
+}
+
+tr{
+    background-color: papayawhip;
+}
+
+tr:nth-child(even){
+    background-color: powderblue;
+}
+th:hover, td:hover{
+    background-color: pink !important;
+    cursor: pointer;
+}
+
+.tablemerge{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    background-image: url(G.png);
+}
+
+.lele {
+    display: block;
+    margin: 20px auto;
+    text-align: left;
+    width: 90%; 
+    max-width: 800px;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+li svg {
+    width: 24px !important;
+    height: 24px !important;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.listbody{
+    background-image: url(bgpink.jpg);
+}
